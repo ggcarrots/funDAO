@@ -19,7 +19,6 @@ class SupportViewController: BaseViewController {
         amountImage.isUserInteractionEnabled = true
         amountImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.amountImageTap)))
     }
-    
 
     @objc func amountImageTap() {
         amountImage.image = UIImage(named: "5on")
@@ -31,5 +30,4 @@ class SupportViewController: BaseViewController {
     @objc func finalTap() {
         self.performSegue(withIdentifier: "FinalSegue", sender: self)
     }
-
 }

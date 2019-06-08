@@ -16,9 +16,7 @@ class FounderViewController: BaseViewController, UITableViewDataSource, UITableV
         super.viewDidLoad()
         projectsTable.backgroundColor = UIColor.clear
         projectsTable.separatorStyle = UITableViewCell.SeparatorStyle.none
-        // Do any additional setup after loading the view.
     }
-    
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataprovider.projects.count
