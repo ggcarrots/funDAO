@@ -22,6 +22,7 @@ class SupportViewController: BaseViewController {
 
     @objc func amountImageTap() {
         amountImage.image = UIImage(named: "5on")
+        actionButton.image = UIImage(named: "supportButtonActive")
         
         actionButton.isUserInteractionEnabled = true
         actionButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.finalTap)))
